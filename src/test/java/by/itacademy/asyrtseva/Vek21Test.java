@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class test21vek {
+public class Vek21Test {
 
     @Test
     public void test21vekLoginEmptyFields() throws InterruptedException {
@@ -15,7 +15,7 @@ public class test21vek {
         driver.manage().window().maximize();
         driver.navigate().to("https://www.21vek.by/");
 
-        Page21vek page21vek = new Page21vek();
+        Vek21Page page21vek = new Vek21Page();
 
         WebElement cookieButton = driver.findElement(By.xpath(page21vek.cookieButtonLocator));
         cookieButton.click();
@@ -44,7 +44,7 @@ public class test21vek {
         driver.manage().window().maximize();
         driver.navigate().to("https://www.21vek.by/");
 
-        Page21vek page21vek = new Page21vek();
+        Vek21Page page21vek = new Vek21Page();
 
         WebElement cookieButton = driver.findElement(By.xpath(page21vek.cookieButtonLocator));
         cookieButton.click();
@@ -77,7 +77,7 @@ public class test21vek {
         driver.manage().window().maximize();
         driver.navigate().to("https://www.21vek.by/");
 
-        Page21vek page21vek = new Page21vek();
+        Vek21Page page21vek = new Vek21Page();
 
         WebElement cookieButton = driver.findElement(By.xpath(page21vek.cookieButtonLocator));
         cookieButton.click();

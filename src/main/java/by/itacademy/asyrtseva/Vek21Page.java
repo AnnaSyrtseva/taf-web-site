@@ -1,6 +1,6 @@
 package by.itacademy.asyrtseva;
 
-public class Page21vek {
+public class Vek21Page {
 
     public String cookieButtonLocator = "//*[@id=\"modal-cookie\"]/div/div[2]/div/button[3]";
     public String enterButtonLocator = "//*[@id=\"header\"]/div/div[3]/div/div[3]/div/div/div/button";
