@@ -5,14 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class RWPage {
-    public String loginButtonLocator = "//*[@id=\"db\"]/div[1]/div[1]/div/header/div/div[3]/div[3]/ul/li[2]/a";
-    public String authModalPage = "//*[@id=\"auth-popup\"]/div/div/div[1]/div";
-    public String inputLoginEmail = "//*[@id=\"form-auth\"]/fieldset/div[1]/label/div[2]/input";
-    public String submitButtonLocator = "//*[@id=\"form-auth\"]/fieldset/div[3]/input";
-    public String errorPasswordMessage = "//*[@id=\"password-error\"]";
-    public String errorLoginMessage = "//*[@id=\"login-error\"]";
-    public String inputLoginPassword = "//*[@id=\"form-auth\"]/fieldset/div[2]/div[1]/div/label/div[2]/input";
-    public String errorAuthMessage = "//*[@id=\"auth-popup\"]/div/div/div[2]/div[2]/div";
+    private String loginButtonLocator = "//*[@id=\"db\"]/div[1]/div[1]/div/header/div/div[3]/div[3]/ul/li[2]/a";
+    private String authModalPage = "//*[@id=\"auth-popup\"]/div/div/div[1]/div";
+    private String inputLoginEmail = "//*[@id=\"form-auth\"]/fieldset/div[1]/label/div[2]/input";
+    private String submitButtonLocator = "//*[@id=\"form-auth\"]/fieldset/div[3]/input";
+    private String errorPasswordMessage = "//*[@id=\"password-error\"]";
+    private String errorLoginMessage = "//*[@id=\"login-error\"]";
+    private String inputLoginPassword = "//*[@id=\"form-auth\"]/fieldset/div[2]/div[1]/div/label/div[2]/input";
+    private String errorAuthMessage = "//*[@id=\"auth-popup\"]/div/div/div[2]/div[2]/div";
 
     private WebDriver driver;
     public RWPage(WebDriver driver) {
