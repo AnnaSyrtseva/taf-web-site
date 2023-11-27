@@ -31,9 +31,6 @@ public class PizzaTempoPage {
 
         public String getTextPizzaInBusket(){return driver.findElement(By.xpath(pizzaInBusket)).getText();
 
-                WebDriverWait wait = new WebDriverWait(driver, "30");
-                wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(pizzaInBusket)));
-
         }
 
     }
