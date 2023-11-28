@@ -10,6 +10,7 @@ public class PizzaTempoTest extends BaseTest{
     public void beforePizzaTempoTest() throws InterruptedException{
         driver.navigate().to("https://www.pizzatempo.by/");
         Thread.sleep(2000);
+        
     }
 
     @Test
@@ -26,7 +27,7 @@ public class PizzaTempoTest extends BaseTest{
         String actual = pizzaPage.getTextPizzaInBusket();
         String expected = "Пицца \"Маргарита\" (26см)";
         Assertions.assertEquals(expected, actual);
-
-    }
+        
+     }
 
 }
