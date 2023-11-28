@@ -20,12 +20,13 @@ public class PizzaTempoTest extends BaseTest{
         pizzaPage.clickMargaritaOrderButton();
         Thread.sleep(2000);
         pizzaPage.clickSubmitOrderButton();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         pizzaPage.clickBusketHomeButton();
         Thread.sleep(4000);
         String actual = pizzaPage.getTextPizzaInBusket();
-        String expected = "Пицца \"Маргарита\"";
+        String expected = "Пицца \"Маргарита\" (26см)";
         Assertions.assertEquals(expected, actual);
+
     }
 
 }
