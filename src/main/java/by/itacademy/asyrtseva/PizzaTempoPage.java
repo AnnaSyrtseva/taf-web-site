@@ -11,10 +11,10 @@ public class PizzaTempoPage {
         private String pizzaSize26Button = "//*[@id=\"1\"]/div/div[2]/div[2]/div[2]";
         private String margaritaOrderButton = "//*[@id=\"1\"]/div/div[2]/div[3]/div[3]";
         private String submitOrderButton = "//*[@id=\"order_pizza_popup\"]/div[2]/div[2]/div[2]/div[1]/div[3]/div[4]";
-        private String busketHomeButton = "//*[@id=\"basket_placeholder\"]/div";
-        private String pizzaInBusket = "//*div [@name=\"cart-product-name title\"]";
-
+        private String busketHomeButton = "//*[@id=\"basket_placeholder\"]/div/div/div[1]/div[1]";
+        private String pizzaInBusket = "//div[@class=\"content\"]//div[(contains(text(), \"Маргарита\"))]";
         private WebDriver driver;
+        
         public PizzaTempoPage (WebDriver driver) {
             this.driver = driver;
         }
@@ -29,8 +29,6 @@ public class PizzaTempoPage {
 
         public void clickBusketHomeButton() {driver.findElement(By.xpath(busketHomeButton)).click();}
 
-        public String getTextPizzaInBusket(){return driver.findElement(By.xpath(pizzaInBusket)).getText();
-
-        }
+        public String getTextPizzaInBusket(){return driver.findElement(By.xpath(pizzaInBusket)).getText();}
 
     }
